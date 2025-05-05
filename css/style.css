@@ -1,0 +1,113 @@
+@import url(fonts.css);
+@import url(predefine-classes.css);
+*{
+    scroll-behavior: smooth;
+}
+.style-logo {
+    width: 150px;
+    height: auto;
+}
+
+.style-active-link {
+    color: #1E3A8A !important;
+    border-bottom: 2px solid #1E3A8A;
+    padding-bottom: 0px !important;
+}
+
+.style-nav-links:hover {
+    color: #1E3A8A !important;
+}
+
+.style-nav-btn {
+    border-radius: 5px;
+    padding: 0.5rem 2.5rem !important;
+    border: 2px solid transparent !important;
+    transition: 0.3s;
+
+}
+
+.style-bordered-btn {
+    border: 2px solid #1E3A8A;
+    border-radius: 5px;
+    padding: 0.5rem 2.5rem !important;
+    transition: 0.3s;
+
+}
+
+/* .style-nav-btn:hover {
+    background-color: transparent !important;
+    color: #1E3A8A !important;
+    border: 2px solid #1E3A8A !important;
+}
+
+.style-bordered-btn:hover {
+    background-color: #1E3A8A !important;
+    color: #eee !important;
+} */
+.style-hero-section-img{
+    /* padding: 0px;
+    margin: 0px; */
+    width: 100%;
+    height: auto;
+}
+.arrow{
+    position: absolute;
+    bottom: -251px;
+}
+.style-arrow{
+    width: 50px;
+    height: 50px;
+    background-color: #1E3A8A;
+    border-radius: 50%;
+}
+.style-service-card{
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.17); 
+box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.1);
+}
+.style-service-card-heading{
+    font-size: 24px;
+}
+.style-service-card-para{
+    font-size: 14px;
+}
+.style-service-card:hover{
+    background-color: #f5f5f5 !important;
+}
+.style-about-heading{
+    font-size: 32px;
+}
+.style-about-para{
+    font-size: 14px;
+}
+.style-about-img{
+    width: 100%;
+    height: auto;
+}
+.style-portfolio{
+    width: 50%;
+    height: auto;
+}
+.style-testimonal-card{
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.17); 
+box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.1);
+}
+.style-testmonal-text{
+    font-size: 14px;
+}
+.style-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.style-test-name{
+    font-size: 18px;
+}
+.style-testimonal-card:hover{
+    
+    background-color: #f5f5f5 !important;
+
+}
