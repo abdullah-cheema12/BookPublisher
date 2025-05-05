@@ -111,3 +111,31 @@ box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.1);
     background-color: #f5f5f5 !important;
 
 }
+.style-fottoer-logo{
+    width: 200px;
+    height: auto;
+}
+.style-link{
+    text-decoration: none !important;
+    color: #fff;
+}
+.style-link:hover{
+    text-decoration: none !important;
+    color: #fff;
+}
+a{
+    text-decoration: none !important;
+    color: currentColor !important;
+}
+a:hover{
+    text-decoration: none !important;
+    color: currentColor !important;
+}
+
+p{
+    font-size: 14px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #1E3A8A !important;
+    margin-top: 1rem;
+}
