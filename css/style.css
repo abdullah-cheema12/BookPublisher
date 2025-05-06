@@ -127,10 +127,7 @@ a{
     text-decoration: none !important;
     color: currentColor !important;
 }
-a:hover{
-    text-decoration: none !important;
-    color: currentColor !important;
-}
+
 
 p{
     font-size: 14px !important;
@@ -138,4 +135,46 @@ p{
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #1E3A8A !important;
     margin-top: 1rem;
+}
+.style-CTA{
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #374C8D;
+}
+.style-CTA-side{
+    height: 50vh;
+}
+
+
+@media (max-width: 576px) {
+    .container,.container-sm {
+        max-width:486px ;
+    }
+   
+    .style-CTA{
+        background-image: url(../images/mob\ CTA.jpg) !important;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #374C8D;
+    }
+}
+
+@media (min-width: 768px) {
+    .container,.container-md,.container-sm {
+        max-width:648px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container,.container-lg,.container-md,.container-sm {
+        max-width:992px ;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container,.container-lg,.container-md,.container-sm,.container-xl {
+        max-width:1026px;
+    }
 }
