@@ -145,7 +145,16 @@ p{
 .style-CTA-side{
     height: 50vh;
 }
+.style-test-rating{
+    width: 400px !important;
 
+    height: auto;
+}
+.style-slider{
+    border-radius: 20px;
+    -webkit-box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.17); 
+    box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.1);
+}
 
 @media (max-width: 576px) {
     .container,.container-sm {
