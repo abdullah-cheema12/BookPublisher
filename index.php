@@ -1,3 +1,4 @@
+<?php include 'admin/db.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -180,25 +181,18 @@
         portfolio of polished <br> publications, bold covers, and powerful author platforms.</p>
     </div>
     <div class="container pt-5">
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <img src="images/11 (1).jpg" alt="" class="style-portfolio">
-        </div>
-        <div class="item">
-          <img src="images/11 (2).jpg" alt="" class="style-portfolio">
-        </div>
-        <div class="item">
-          <img src="images/11 (3).jpg" alt="" class="style-portfolio">
-        </div>
-        <div class="item">
-          <img src="images/11 (5).jpg" alt="" class="style-portfolio">
-        </div>
-        <div class="item">
-          <img src="images/11 (6).jpg" alt="" class="style-portfolio">
-        </div>
-     
-
+    <div class="owl-carousel owl-theme">
+        <?php
+        $result = $conn->query("SELECT * FROM portfolio_images ORDER BY uploaded_at DESC");
+        while ($row = $result->fetch_assoc()) {
+            echo '
+            <div class="item">
+                <img src="admin/' . $row['image_path'] . '" alt="" class="style-portfolio">
+            </div>';
+        }
+        ?>
     </div>
+</div>
    
  
     </div>
