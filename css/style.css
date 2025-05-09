@@ -155,6 +155,23 @@ p{
     -webkit-box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.17); 
     box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.1);
 }
+.style-contact-us-input{
+    padding: 12px 24px 12px 12px;
+    border: 0px solid transparent !important;
+    border-radius: 5px;
+    
+}
+.style-contact-us-text{
+    padding: 12px 12px 12px 12px;
+    border-radius: 5px;
+    border: 0px solid transparent !important;
+
+}
+.style-contact-us-input:focus , .style-contact-us-text:focus {
+    border: 0px solid transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
 
 @media (max-width: 576px) {
     .container,.container-sm {

@@ -20,7 +20,107 @@
 </head>
 
 <body>
+  <!-- Modal -->
+<div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
+      <!-- Modal Header -->
+      <div class="modal-header bg-blue text-white">
+        <h5 class="modal-title text-capitalize text-white font-dosis-bold " id="bookModalLabel">Get started</h5>
+      </div>
+
+      <!-- Modal Body with Two Steps -->
+      <div class="modal-body">
+        <form id="bookForm">
+
+          <!-- Step 1 -->
+          <div id="step1">
+            <div class="mb-3">
+              <select name="manu-script" id="manu-script" class="text-capitalize w-100 text-black font-poppins-light style-contact-us-input bg-light-grey px-2">
+                <option value class="gf_placeholder">Do you have a manuscript ready ?*
+                  </option>
+                  <option value="Yes, I'm ready to publish today">Yes, I'm ready to publish today</option> 
+                  <option value="Yes, I'll be ready to publish in 1 to 3 months" selected="selected">Yes, I'll be ready to publish in 1 to 3 months</option>
+                  <option value="Yes, I'll be ready to publish in 3 to 6 months">Yes, I'll be ready to publish in 3 to 6 months</option> 
+                  <option value="No, I do not have a book or manuscript ready">No, I do not have a book or manuscript ready</option>
+                  <option value="Yes, I'll be ready to publish in 6 to 12 months">Yes, I'll be ready to publish in 6 to 12 months</option>
+                  
+                  
+                  
+                  
+              </select>
+            </div>
+            <div class="mb-3">
+              <select name="manu-script" id="manu-script" class="text-capitalize w-100 text-black font-poppins-light style-contact-us-input bg-light-grey px-2">
+                <option value class="gf_placeholder">What type of book do you plan on publishing ?< /option>
+                  <option value="Business">Business</option>
+                  <option value="Biography">Biography</option>
+                  <option value="Inspirational">Inspirational</option>
+                  <option value="Non-Fiction">Non-Fiction</option>
+                  <option value="How-To">How-To</option>
+                  <option value="Autobiography/Memoir">Autobiography/Memoir</option>
+                  <option value="Self-Help">Self-Help</option>
+                  <option value="Children's">Children's</option>
+                  <option value="Spiritual/Religious" selected="selected">Spiritual/Religious</option>
+                  <option value="Fiction">Fiction</option>
+                  <option value="Art/Photography">Art/Photography</option>(
+                  <option value="Cookbook">Cookbook</option>
+                  <option value="Other">Other</option>    
+              </select>
+            </div>
+            
+            <button type="button" class="style-btn bg-blue text-white font-dosis-regular " id="nextBtn">Next</button>
+          </div>
+
+          <!-- Step 2 -->
+          <div id="step2" style="display: none;">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" name="text" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" placeholder="Enter Your Last name" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" name="text" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" 
+              placeholder="Enter Your Phone No." required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="text" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" 
+              placeholder="Enter Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="description" id="" rows="6" class="w-100 font-poppins-light text-black bg-light-grey style-contact-us-text" placeholder="Enter the Message"></textarea>
+            </div>
+            <button type="button" class="style-btn text-white font-dosis-regular bg-blue" id="prevBtn">Previous</button>
+            <button type="submit" class="style-btn text-white font-dosis-regular bg-blue">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS to handle steps -->
+<script>
+  document.getElementById('nextBtn').addEventListener('click', function () {
+    document.getElementById('step1').style.display = 'none';
+    document.getElementById('step2').style.display = 'block';
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', function () {
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step1').style.display = 'block';
+  });
+
+  document.getElementById('bookForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Form submitted successfully!');
+    // Here you can add your AJAX or backend call
+  });
+</script>
   <!-- hero section -->
   <section class="bg-light-grey" id="home">
     <!-- nav -->
@@ -43,8 +143,12 @@
               href="#portoflio">Portfolio</a>
           </div>
           <div class="navbar-nav ml-auto font-">
-                 <a class="nav-item my-2 nav-link font-dosis-regular bg-blue text-white style-nav-btn ml-2" href="tel:+92 300 1204546">Get
-              started</a>
+                
+            <button type="button" class="btn my-2 font-dosis-regular bg-blue text-white style-nav-btn 
+               text-capiltalize" data-toggle="modal" data-target="#bookModal">
+              Get started
+              </button>
+              
           </div>
         </div>
       </div>
@@ -57,7 +161,10 @@
         support—from expert proofreading and formatting to custom cover design, professional publishing, and author
         website creation. We prepare your book to be print-ready and publish it across major platforms, ensuring it
         meets all professional and publishing standards.</p>
-      <a class="text-capitalize font-dosis-regular text-center text-white style-btn bg-blue" href="tel:+92 300 1204546">Get started</a>
+        <button type="button" class="btntext-capitalize font-dosis-regular text-center text-white style-btn bg-blue" data-toggle="modal" data-target="#bookModal">
+       Get started
+       </button>
+ 
     </div>
     <div class="container">
       <img src="images/hero section.png" alt="hero section image" class="style-hero-section-img">
@@ -74,7 +181,7 @@
   <section class=" py-10  " id="service">
     <div class="container">
       <h2 class="text-capitalize font-dosis-bold text-blue m-0 text-center">Complete Book Publishing Support</h2>
-      <p class="text-capitalize font-poopins-lite text-black text-center">From writing to publishing, we offer
+      <p class="text-capitalize font-poppins-lite text-black text-center">From writing to publishing, we offer
         end-to-end services to help you<br> turn your manuscript into a market-ready masterpiece.</p>
     </div>
     <div class="container pt-5">
@@ -166,7 +273,9 @@
               author websites to help you promote your book online. Our team handles everything with care and
               expertise—so you can focus on your story, while we take care of the publishing journey. We make book
               publishing easy, professional, and truly author-friendly.</p>
-            <a href="tel:+92 300 1204546" class="style-btn mt-2 bg-blue text-white">get started</a>
+              <button type="button" class="btn text-capitalize mt-2 font-dosis-regular text-center text-white style-btn bg-blue" data-toggle="modal" data-target="#bookModal">
+                Get started
+                </button>
           </div>
         </div>
       </div>
@@ -177,7 +286,7 @@
     <div class="container">
       <h2 class="text-capitalize font-dosis-bold text-blue m-0 text-center">From Concept to Masterpiece — Explore Our
         Work</h2>
-      <p class="text-capitalize font-poopins-lite text-black text-center">Our work turns ideas into books. Explore our
+      <p class="text-capitalize font-poppins-lite text-black text-center">Our work turns ideas into books. Explore our
         portfolio of polished <br> publications, bold covers, and powerful author platforms.</p>
     </div>
     <div class="container pt-5">
@@ -203,7 +312,7 @@
     <div class="container">
       <h2 class="text-capitalize font-dosis-bold text-blue m-0 text-center">From Concept to Masterpiece — Explore Our
         Work</h2>
-      <p class="text-capitalize font-poopins-lite text-black text-center">Our work turns ideas into books. Explore our
+      <p class="text-capitalize font-poppins-lite text-black text-center">Our work turns ideas into books. Explore our
         portfolio of polished <br> publications, bold covers, and powerful author platforms.</p>
     </div>
     <div class="pt-5 container">
@@ -310,7 +419,7 @@
    <section class="pb-10">
     <div class="container">
       <h2 class="text-capitalize font-dosis-bold text-blue m-0 text-center">What Our Clients Say</h2>
-      <p class="text-capitalize font-poopins-lite text-black text-center">Real stories from real authors — see how we’ve helped clients turn their ideas into <br>professionally published, successful books.</p>
+      <p class="text-capitalize font-poppins-lite text-black text-center">Real stories from real authors — see how we’ve helped clients turn their ideas into <br>professionally published, successful books.</p>
     </div>
     <div class="container">
       <div class="owl-carousel owl-theme ">
@@ -446,7 +555,10 @@
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  px-5">
           <h1 class="text-uppercase font-dosis-bold text-white m-0">Your Book Deserves the Spotlight...!</h1>
           <p class="text-white text-capitalize font-poppins-light m-0 pt-2 pb-4">You’ve poured your heart into your words — now let us help you share them with the world. From editing to publishing, we’re here to guide every step of your journey.</p>
-          <a href="tel:+92 300 1204546" class="bg-white text-blue style-btn font-dosis-regular ">Get started</a>
+
+          <button type="button" class="btn bg-white text-blue style-btn font-dosis-regular " data-toggle="modal" data-target="#bookModal">
+            Get started
+            </button>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  py-5 style-CTA-side">
          
@@ -455,6 +567,8 @@
     </div>
    </div>
   </section>
+
+
   <!-- footer -->
    <footer class="pt-5 bg-light-grey" id="footer">
     <div class="container">
@@ -502,7 +616,7 @@
     </div>
     <div class=" bg-blue mt-5">
     <div class="container">
-      <p class=" text-center m-0 text-capitalize text-white font-poopins-regular py-3">
+      <p class=" text-center m-0 text-capitalize text-white font-poppins-regular py-3">
         BookPublisher : ©2025 Copyright all rights are reserved | <a href="https://spiraltech.com.co/" class="style-link">Powered by spiraltech</a>
       </p>
     </div>
