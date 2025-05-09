@@ -32,7 +32,10 @@
 
       <!-- Modal Body with Two Steps -->
       <div class="modal-body">
-        <form id="bookForm">
+        <form id="bookForm" action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="e190bdcb-92f8-4495-a5ce-4c4785cfd439">
 
           <!-- Step 1 -->
           <div id="step1">
@@ -52,8 +55,8 @@
               </select>
             </div>
             <div class="mb-3">
-              <select name="manu-script" id="manu-script" class="text-capitalize w-100 text-black font-poppins-light style-contact-us-input bg-light-grey px-2">
-                <option value class="gf_placeholder">What type of book do you plan on publishing ?< /option>
+              <select name="manuscript_status" id="manuscript_status" class="text-capitalize w-100 text-black font-poppins-light style-contact-us-input bg-light-grey px-2">
+                <option value="" class="gf_placeholder">What type of book do you plan on publishing ?</option>
                   <option value="Business">Business</option>
                   <option value="Biography">Biography</option>
                   <option value="Inspirational">Inspirational</option>
@@ -64,7 +67,7 @@
                   <option value="Children's">Children's</option>
                   <option value="Spiritual/Religious" selected="selected">Spiritual/Religious</option>
                   <option value="Fiction">Fiction</option>
-                  <option value="Art/Photography">Art/Photography</option>(
+                  <option value="Art/Photography">Art/Photography</option>
                   <option value="Cookbook">Cookbook</option>
                   <option value="Other">Other</option>    
               </select>
@@ -77,22 +80,25 @@
           <div id="step2" style="display: none;">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" name="text" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" placeholder="Enter Your Last name" required>
+              <input type="text" name="name" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" placeholder="Enter Your Last name" required>
             </div>
             <div class="mb-3">
               <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" name="text" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" 
+              <input type="tel" name="phone" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" 
               placeholder="Enter Your Phone No." required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" name="text" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" 
+              <input type="email" name="email" class="style-contact-us-input w-100 font-poppins-light text-black bg-light-grey" 
               placeholder="Enter Your Email" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea name="description" id="" rows="6" class="w-100 font-poppins-light text-black bg-light-grey style-contact-us-text" placeholder="Enter the Message"></textarea>
+              <textarea name="message" id="" rows="6" class="w-100 font-poppins-light text-black bg-light-grey style-contact-us-text" placeholder="Enter the Message"></textarea>
             </div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <input type="hidden" name="redirect" value="index.php">
+
             <button type="button" class="style-btn text-white font-dosis-regular bg-blue" id="prevBtn">Previous</button>
             <button type="submit" class="style-btn text-white font-dosis-regular bg-blue">Submit</button>
           </div>
@@ -115,11 +121,11 @@
     document.getElementById('step1').style.display = 'block';
   });
 
-  document.getElementById('bookForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Form submitted successfully!');
+  //document.getElementById('bookForm').addEventListener('submit', function (e) {
+    //e.preventDefault();
+    //alert('Form submitted successfully!');
     // Here you can add your AJAX or backend call
-  });
+  //});
 </script>
   <!-- hero section -->
   <section class="bg-light-grey" id="home">
