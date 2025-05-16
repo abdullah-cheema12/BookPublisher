@@ -140,11 +140,11 @@
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto font-">
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize style-active-link"
-              href="#home">Home <span class="sr-only">(current)</span></a>
+              href="index.php">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize"
-              href="#service">Service</a>
+              href="service.html">Service</a>
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize"
-              href="#aboutus">About us</a>
+              href="about.html">About us</a>
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize"
               href="#portoflio">Portfolio</a>
           </div>
