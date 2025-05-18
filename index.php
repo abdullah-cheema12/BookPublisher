@@ -20,6 +20,15 @@
 </head>
 
 <body>
+  <!-- whatsapp icon -->
+ <div class="style-icon" style="
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    margin: 28px 42px;
+">
+    <a href="https://wa.me/03010420724"><img src="images/logo/whats.svg" alt="whatsapp-icon"></a>
+  </div>
   <!-- Modal -->
 <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -142,7 +151,7 @@
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize style-active-link"
               href="index.php">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize"
-              href="service.html">Service</a>
+              href="service.php">Service</a>
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize"
               href="about.html">About us</a>
             <a class="nav-item my-2 nav-link font-dosis-regular text-black style-nav-links mx-2 text-capitalize"
@@ -175,14 +184,16 @@
     <div class="container">
       <img src="images/hero section.png" alt="hero section image" class="style-hero-section-img">
     </div>
-    <div class="arrow w-100  d-flex justify-content-center align-items-center">
-      <a href="#service">
-        <div class="style-arrow d-flex justify-content-center align-items-center pt-1">
-          <img src="images/logo/arrow down.png" alt="arrow down">
-        </div>
-      </a>
-    </div>
-  </section>
+   </section>
+       <div class=" w-100 d-flex justify-content-center align-items-center">
+        <div class="" style="margin-top: -20px;">
+    <a href="#service">
+      <div class="style-arrow d-flex justify-content-center align-items-center">
+        <img src="images/logo/arrow down.png" alt="arrow down">
+      </div>
+    </a>
+  </div> 
+       </div>
   <!-- service -->
   <section class=" py-10  " id="service">
     <div class="container">
@@ -605,7 +616,8 @@
            <div class="pt-1">
               <div class="style-contact d-flex align-items-center flex-row  py-1">
                 <img src="images/logo/phone.svg" alt="phone icon">
-                <p class="text-capitalize font-poppins-regular text-black m-0 pl-3" style="font-size: 18px;"><a href="tel:+92 300 1204546">+92 300 1204546</a></p>
+               <p class="text-capitalize font-poppins-regular text-black m-0 pl-3" style="font-size: 18px;"><a
+                    href="https://wa.me/+923010420724" target="_blank">+92 301 0420724</a></p>
               </div>
               <div class="style-contact d-flex align-items-center flex-row  py-1">
                 <img src="images/logo/mail.svg" alt="phone icon">
@@ -613,7 +625,7 @@
               </div>
               <div class="style-contact d-flex align-items-start flex-row  py-1">
                 <img src="images/logo/location.svg" alt="phone icon">
-                <p class="text-capitalize font-poppins-regular text-black m-0 pl-3" style="font-size: 18px;"><a href="#">45D , sector E , Canal view , Gujranwala , Pakistan </a></p>
+                <p class="text-capitalize font-poppins-regular text-black m-0 pl-3" style="font-size: 18px;"><a href="#">Wapda Town, Lahore, Pakistan</a></p>
               </div>
            </div>
           </div>

@@ -53,17 +53,6 @@
     height: auto;
 }
 
-.arrow {
-    position: absolute;
-    bottom: -251px;
-}
-
-.style-arrow {
-    width: 50px;
-    height: 50px;
-    background-color: #1E3A8A;
-    border-radius: 50%;
-}
 
 .style-service-card {
     cursor: pointer;
@@ -319,6 +308,14 @@ p {
     .container, .container-md, .container-sm {
         max-width: 648px;
     }
+     .style-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow {
+    bottom: 20px;
+  }
 }
 
 @media (min-width: 992px) {
